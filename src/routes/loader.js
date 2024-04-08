@@ -1,10 +1,10 @@
 import axios from "axios";
 //NOTE - loader function
-const loader = async () => {
+const homeLoader = async () => {
   const data = await fetchData("/luxury.json");
   return { data };
 };
-export default loader;
+export default homeLoader;
 //  fetch function
 async function fetchData(url) {
   const data = await axios.get(url);
