@@ -1,6 +1,7 @@
 import Home from "../pages/home/Home";
 import LuxuryDetails from "../pages/luxury-details/LuxuryDetails";
 import Profile from "../pages/profile/Profile";
+import loader from "../routes/loader";
 import Register from "./../pages/register/Register";
 
 export const navData = [
@@ -8,6 +9,7 @@ export const navData = [
     name: "Home",
     path: "/",
     page: Home,
+    loader: loader,
   },
   {
     name: "",

@@ -9,6 +9,7 @@ export const router = createBrowserRouter([
       return {
         path: nav.path,
         element: <nav.page />,
+        loader: nav.loader,
       };
     }),
   },
