@@ -7,8 +7,8 @@ export const router = createBrowserRouter([
     element: <Root />,
     children: navData?.map((nav) => {
       return {
-        path,
-        element,
+        path: nav.path,
+        element: <nav.page />,
       };
     }),
   },

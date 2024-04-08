@@ -7,21 +7,21 @@ export const navData = [
   {
     name: "Home",
     path: "/",
-    element: Home,
+    page: Home,
   },
   {
     name: "",
     path: "/luxury/:id",
-    element: LuxuryDetails ,
+    page: LuxuryDetails,
   },
   {
     name: "Profile",
     path: "/profile",
-    element: Profile ,
+    page: Profile,
   },
   {
     name: "Register",
     path: "/register",
-    element: Register ,
+    page: Register,
   },
 ];
