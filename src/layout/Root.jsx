@@ -6,9 +6,11 @@ import Header from "../components/shared/header/Header";
 const Root = () => {
   return (
     <div className="mx-auto max-w-[2400px] bg-gray-50">
-      <div className="w-[90%] mx-auto">
-        <Header />
-        {<Outlet />}
+      <div className="">
+        <div className="shadow-md">
+          <Header />
+        </div>
+        <div className="w-[90%] mx-auto">{<Outlet />}</div>
       </div>
       <Footer />
     </div>
