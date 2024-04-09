@@ -9,7 +9,7 @@ function Header() {
   const user = true;
   const [openBar, setOpenBar] = React.useState(false);
   return (
-    <div className="py-3 flex justify-between items-center w-[90%] mx-auto">
+    <div className="py-3 mt-3 flex justify-between items-center w-[90%] mx-auto">
       {/* left side nav  */}
       <div className="flex gap-2 ">
         {/* bars  */}
