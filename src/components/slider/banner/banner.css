@@ -1,0 +1,16 @@
+.banner1 {
+  background: linear-gradient(
+      180deg,
+      rgba(31, 45, 54, 0.8) 0%,
+      rgba(132, 129, 129, 0) 100%
+    ),
+    url("https://businessgrowmore.com/wp-content/uploads/2024/03/australia_newfalldevs2020_lead-2560x1400-1.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

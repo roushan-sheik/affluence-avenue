@@ -9,7 +9,7 @@ function Header() {
   const user = true;
   const [openBar, setOpenBar] = React.useState(false);
   return (
-    <div className="py-4 flex justify-between items-center w-[90%] mx-auto">
+    <div className="py-3 flex justify-between items-center w-[90%] mx-auto">
       {/* left side nav  */}
       <div className="flex gap-2 ">
         {/* bars  */}
@@ -21,7 +21,7 @@ function Header() {
           </span>
           <div className="md:hidden block ">
             {openBar && (
-              <div className="bg-gray-200 p-4 w-[200px] absolute top-16 flex gap-2 flex-col rounded-sm">
+              <div className="z-50 bg-gray-200 p-4 w-[200px] absolute top-16 flex gap-2 flex-col rounded-sm">
                 {<Navlist />}
               </div>
             )}
