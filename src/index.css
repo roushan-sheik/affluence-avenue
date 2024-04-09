@@ -11,32 +11,31 @@ h1 h2 h3 h4 {
   font-family: "Prompt", serif;
   color: rgb(19, 19, 19);
 }
-@layer components {
-  /* custom class  */
 
-  .bg_pri {
-    /* Your custom styles here */
-    background-color: #ee5253;
-  }
-  .bg_sec {
-    /* Your custom styles here */
-    background-color: #ff6b6b;
-  }
-  .bg_third {
-    /* Your custom styles here */
-    background: rgba(19, 19, 19, 0.05);
-  }
-  /* text color  */
-  .text_brand {
-    color: #ee5253;
-  }
-  .text_pri {
-    color: rgba(19, 19, 19);
-  }
-  .text_sec {
-    color: rgba(19, 19, 19, 0.8);
-  }
-  .text_third {
-    color: rgba(19, 19, 19, 0.7);
-  }
+/* custom class  */
+
+.bg_pri {
+  /* Your custom styles here */
+  background-color: #ee5253;
+}
+.bg_sec {
+  /* Your custom styles here */
+  background-color: #ff6b6b;
+}
+.bg_third {
+  /* Your custom styles here */
+  background: rgba(19, 19, 19, 0.05);
+}
+/* text color  */
+.text_brand {
+  color: #ee5253;
+}
+.text_pri {
+  color: rgba(19, 19, 19);
+}
+.text_sec {
+  color: rgba(19, 19, 19, 0.8);
+}
+.text_third {
+  color: rgba(19, 19, 19, 0.7);
 }

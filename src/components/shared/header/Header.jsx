@@ -21,7 +21,7 @@ function Header() {
           </span>
           <div className="md:hidden block ">
             {openBar && (
-              <div className="bg-gray-200 p-4 w-[200px] absolute top-12 flex gap-2 flex-col rounded-sm">
+              <div className="bg-gray-200 p-4 w-[200px] absolute top-16 flex gap-2 flex-col rounded-sm">
                 {<Navlist />}
               </div>
             )}
@@ -45,10 +45,13 @@ function Header() {
             <Avatar
               img="https://res.cloudinary.com/dakrgonvu/image/upload/v1709822675/profile-500into500-2_otijsr.png"
               rounded
-              status="busy"
               statusPosition="top-right"
+              status="online"
+              className="cursor-pointer"
             />
-            <Button>LogOut</Button>
+            <Button className="focus:ring-0 bg_pri" pill>
+              LogOut
+            </Button>
           </div>
         ) : (
           <Button>Login</Button>
