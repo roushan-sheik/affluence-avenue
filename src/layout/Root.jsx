@@ -10,7 +10,7 @@ const Root = () => {
         <Header />
         {<Outlet />}
       </div>
-      <Footer />;
+      <Footer />
     </div>
   );
 };
