@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       {/* Banner section  */}
-      <div className="h-[500px] overflow-hidden ">
+      <div>
         <BannerSlider />
       </div>
     </div>

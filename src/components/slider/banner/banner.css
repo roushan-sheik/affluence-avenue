@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 600px;
 }
 .banner2 {
   background: linear-gradient(
