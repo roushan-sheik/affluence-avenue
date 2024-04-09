@@ -1,19 +1,19 @@
 export const bannerData = [
   {
     id: 1,
-    title: "Penthouse",
+    title: "Luxury Penthouse in Manhattan",
     image:
-      "https://businessgrowmore.com/wp-content/uploads/2024/03/australia_newfalldevs2020_lead-2560x1400-1.jpeg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiT7KJgg8vOwlheSCdNUMEgfIerGMjpf98VPHtkTAsiQ&s",
     description:
-      "Indulge in the pinnacle of luxury living with our exclusive penthouses. Immerse yourself in opulent spaces boasting exquisite design, breathtaking views, and unrivaled amenities. Elevate your lifestyle and embrace the epitome of sophistication in these prestigious residences.",
+      "Experience unparalleled luxury living in the heart of Manhattan. This exquisite penthouse boasts breathtaking city skyline views, state-of-the-art amenities, and a seamless indoor-outdoor layout, setting a new standard for upscale urban living.",
   },
   {
     id: 2,
-    title: "Penthouse",
+    title: "Beachfront Villa in Malibu",
     image:
-      "https://icarus-luxury-beachfront-villa-gialiskari-icaria.hotelmix.it/data/Photos/OriginalPhoto/13504/1350410/1350410480/Icarus-Luxury-Beachfront-Villa-Gialiskari-Exterior.JPEG",
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/366036509.jpg?k=ea2b99e46fed4b2adb904333b9f661882482a49c335f55ee6c90d0df6495b7d7&o=&hp=1",
     description:
-      "Discover the epitome of coastal luxury with our exquisite beachfront properties. Immerse yourself in breathtaking ocean views, pristine sandy shores, and unparalleled tranquility. Experience the ultimate blend of elegance and serenity in these prestigious coastal retreats.",
+      "Discover coastal luxury in this Malibu beachfront villa. Panoramic ocean views, sleek modern design, and luxurious amenities create an unparalleled beachfront experience, perfect for a serene coastal retreat.",
   },
 
   {
@@ -56,7 +56,7 @@ export const bannerData = [
       "Escape to luxury in this Aspen ski chalet. Direct ski-in/ski-out access, mountain views, and cozy interiors provide the ultimate alpine getaway for winter enthusiasts seeking relaxation and adventure.",
   },
   {
-    id: 9,
+    id: 8,
     title: "Luxury Safari Lodge in Africa",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCODweeiyltmMWE5kbk1Xr1ABHk72Y1pLNvdRqyNGkXQ&s",
@@ -64,19 +64,3 @@ export const bannerData = [
       "Embark on a luxurious safari adventure in the heart of the Serengeti. Elegant tented suites, exhilarating wildlife excursions, and unparalleled views offer the ultimate blend of luxury and adventure in Tanzania's pristine wilderness",
   },
 ];
-//   {
-//     id: 1,
-//     title: "Luxury Penthouse in Manhattan",
-//     image:
-//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiT7KJgg8vOwlheSCdNUMEgfIerGMjpf98VPHtkTAsiQ&s",
-//     description:
-//       "Experience unparalleled luxury living in the heart of Manhattan. This exquisite penthouse boasts breathtaking city skyline views, state-of-the-art amenities, and a seamless indoor-outdoor layout, setting a new standard for upscale urban living.",
-//   },
-//   {
-//     id: 2,
-//     title: "Beachfront Villa in Malibu",
-//     image:
-//       "https://cf.bstatic.com/xdata/images/hotel/max1024x768/366036509.jpg?k=ea2b99e46fed4b2adb904333b9f661882482a49c335f55ee6c90d0df6495b7d7&o=&hp=1",
-//     description:
-//       "Discover coastal luxury in this Malibu beachfront villa. Panoramic ocean views, sleek modern design, and luxurious amenities create an unparalleled beachfront experience, perfect for a serene coastal retreat.",
-//   },

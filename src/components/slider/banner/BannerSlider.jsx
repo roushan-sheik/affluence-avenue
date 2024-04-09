@@ -39,7 +39,7 @@ export default function BannerSlider() {
       >
         {/* Slider start =============================================== */}
         <SwiperSlide>
-          <div className=" banner1 z-0  relative h-[500px]  ">
+          <div className=" banner1 banner_common z-0  relative h-[500px]  ">
             <div className="absolute top-0 p-10 left-0">
               <h2 className="md:text-6xl text-3xl md:font-bold font-semibold mt-6 text-white text-center">
                 {bannerData[0].title}
@@ -47,6 +47,153 @@ export default function BannerSlider() {
               d
               <p className="text-base text-white mt-6 md:w-[60%] w-full mx-auto">
                 {bannerData[0].description}
+              </p>
+              <div className="inline-flex justify-center flex-col mt-8">
+                <Button
+                  size={"lg"}
+                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
+                >
+                  Explore Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=" banner2 banner_common z-0  relative h-[500px]  ">
+            <div className="absolute top-0 p-10 left-0">
+              <h2 className="md:text-6xl text-3xl md:font-bold font-semibold mt-6 text-white text-center">
+                {bannerData[1].title}
+              </h2>
+              d
+              <p className="text-base text-white mt-6 md:w-[60%] w-full mx-auto">
+                {bannerData[1].description}
+              </p>
+              <div className="inline-flex justify-center flex-col mt-8">
+                <Button
+                  size={"lg"}
+                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
+                >
+                  Explore Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=" banner3 banner_common z-0  relative h-[500px]  ">
+            <div className="absolute top-0 p-10 left-0">
+              <h2 className="md:text-6xl text-3xl md:font-bold font-semibold mt-6 text-white text-center">
+                {bannerData[2].title}
+              </h2>
+              d
+              <p className="text-base text-white mt-6 md:w-[60%] w-full mx-auto">
+                {bannerData[2].description}
+              </p>
+              <div className="inline-flex justify-center flex-col mt-8">
+                <Button
+                  size={"lg"}
+                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
+                >
+                  Explore Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=" banner4 banner_common z-0  relative h-[500px]  ">
+            <div className="absolute top-0 p-10 left-0">
+              <h2 className="md:text-6xl text-3xl md:font-bold font-semibold mt-6 text-white text-center">
+                {bannerData[3].title}
+              </h2>
+              d
+              <p className="text-base text-white mt-6 md:w-[60%] w-full mx-auto">
+                {bannerData[3].description}
+              </p>
+              <div className="inline-flex justify-center flex-col mt-8">
+                <Button
+                  size={"lg"}
+                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
+                >
+                  Explore Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=" banner5 banner_common z-0  relative h-[500px]  ">
+            <div className="absolute top-0 p-10 left-0">
+              <h2 className="md:text-6xl text-3xl md:font-bold font-semibold mt-6 text-white text-center">
+                {bannerData[4].title}
+              </h2>
+              d
+              <p className="text-base text-white mt-6 md:w-[60%] w-full mx-auto">
+                {bannerData[4].description}
+              </p>
+              <div className="inline-flex justify-center flex-col mt-8">
+                <Button
+                  size={"lg"}
+                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
+                >
+                  Explore Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=" banner6 banner_common z-0  relative h-[500px]  ">
+            <div className="absolute top-0 p-10 left-0">
+              <h2 className="md:text-6xl text-3xl md:font-bold font-semibold mt-6 text-white text-center">
+                {bannerData[5].title}
+              </h2>
+              d
+              <p className="text-base text-white mt-6 md:w-[60%] w-full mx-auto">
+                {bannerData[5].description}
+              </p>
+              <div className="inline-flex justify-center flex-col mt-8">
+                <Button
+                  size={"lg"}
+                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
+                >
+                  Explore Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=" banner7 banner_common z-0  relative h-[500px]  ">
+            <div className="absolute top-0 p-10 left-0">
+              <h2 className="md:text-6xl text-3xl md:font-bold font-semibold mt-6 text-white text-center">
+                {bannerData[6].title}
+              </h2>
+              d
+              <p className="text-base text-white mt-6 md:w-[60%] w-full mx-auto">
+                {bannerData[6].description}
+              </p>
+              <div className="inline-flex justify-center flex-col mt-8">
+                <Button
+                  size={"lg"}
+                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
+                >
+                  Explore Now
+                </Button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className=" banner8 banner_common z-0  relative h-[500px]  ">
+            <div className="absolute top-0 p-10 left-0">
+              <h2 className="md:text-6xl text-3xl md:font-bold font-semibold mt-6 text-white text-center">
+                {bannerData[7].title}
+              </h2>
+              d
+              <p className="text-base text-white mt-6 md:w-[60%] w-full mx-auto">
+                {bannerData[7].description}
               </p>
               <div className="inline-flex justify-center flex-col mt-8">
                 <Button
