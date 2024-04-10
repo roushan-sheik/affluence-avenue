@@ -31,7 +31,7 @@ const State = ({ stateData }) => {
           <h4 className="text-base text_third   ">{location}</h4>
         </div>
         <h4 className="text-base text_third mb-2  ">
-          <span className="font-medium ">Mounthly Cost: </span>
+          <span className="font-medium ">Mouthy Cost: </span>
           {monthly_cost}$
         </h4>
         <h4 className="text-base text_third mb-2 ">{status}</h4>

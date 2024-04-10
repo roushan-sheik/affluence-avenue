@@ -13,7 +13,11 @@ h1 h2 h3 h4 {
 }
 
 /* custom class  */
-
+.main_ {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
 .bg_pri {
   /* Your custom styles here */
   background-color: #ee5253;

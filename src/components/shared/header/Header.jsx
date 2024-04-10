@@ -1,10 +1,10 @@
-import { Avatar, Button } from "flowbite-react";
+import { Button } from "flowbite-react";
 import React from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { MdOutlineClear } from "react-icons/md";
 import { Link } from "react-router-dom";
+import NavProfile from "../../nav-profile/NavProfile";
 import Navlist from "../../navlist/Navlist";
-import BannerSlider from "../../slider/banner/BannerSlider";
 
 function Header() {
   const user = true;
@@ -45,27 +45,17 @@ function Header() {
           </div>
           {/* right side nav  */}
           <div>
-            {user ? (
-              <div className=" flex gap-2 md:gap-6 items-center">
-                <Avatar
-                  img="https://res.cloudinary.com/dakrgonvu/image/upload/v1709822675/profile-500into500-2_otijsr.png"
-                  rounded
-                  statusPosition="top-right"
-                  status="online"
-                  className="cursor-pointer"
-                />
-                <Button className="focus:ring-0 bg_pri" pill>
-                  LogOut
-                </Button>
-              </div>
-            ) : (
-              <Button>Login</Button>
-            )}
+            <div className=" flex gap-2 md:gap-6 items-center">
+              {user ? (
+                <NavProfile />
+              ) : (
+                <Button className="bg_pri">LogIn</Button>
+              )}
+            </div>
           </div>
         </div>
       </header>
       {/* banner  */}
-      <BannerSlider />
     </div>
   );
 }
