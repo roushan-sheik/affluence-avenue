@@ -59,7 +59,6 @@ const Register = () => {
           <TextInput
             id="name"
             type="text"
-            placeholder="arifa moni"
             onChange={formik.handleChange}
             required
             shadow
@@ -91,7 +90,7 @@ const Register = () => {
           <TextInput
             id="photo"
             type="text"
-            placeholder="photo url.."
+            placeholder="http://arifamoni.com/profile.png"
             onChange={formik.handleChange}
             required
             shadow
@@ -102,24 +101,25 @@ const Register = () => {
         {/* password  */}
         <div>
           <div className="mb-2 block">
-            <Label htmlFor="password2" value="Your password" />
+            <Label htmlFor="password" value="Your password" />
           </div>
           <TextInput
-            id="password2"
+            id="password"
             type="password"
             required
             onChange={formik.handleChange}
             shadow
+            autoComplete="on"
             name="password"
           />
         </div>
         {renderPasswordErrors}
+        {/* submit button  */}
         <Btn type={"submit"}> Login</Btn>
-
         <p className=" text-base text_sec text-center ">
           Already have an Account?{" "}
           <Link to="/login">
-            <span className="text-sky-500">Register</span>
+            <span className="text-sky-500">Login</span>
           </Link>
         </p>
       </form>
