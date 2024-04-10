@@ -7,7 +7,7 @@ import NavProfile from "../../nav-profile/NavProfile";
 import Navlist from "../../navlist/Navlist";
 
 function Header() {
-  const user = true;
+  const user = false;
   const [openBar, setOpenBar] = React.useState(false);
   return (
     <div>
@@ -31,7 +31,7 @@ function Header() {
               </div>
             </div>
             {/* nav title  */}
-            <Link>
+            <Link to={"/"}>
               <h2 className="font-semibold text_pri cursor-pointer md:text-3xl text-lg">
                 AffluenceAvenue
               </h2>
@@ -49,7 +49,9 @@ function Header() {
               {user ? (
                 <NavProfile />
               ) : (
-                <Button className="bg_pri">LogIn</Button>
+                <Link to={"/login"}>
+                  <Button className="bg_pri">LogIn</Button>
+                </Link>
               )}
             </div>
           </div>
