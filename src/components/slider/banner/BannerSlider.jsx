@@ -10,8 +10,8 @@ import "swiper/css/pagination";
 import { bannerData } from "../../../constant/banner";
 
 // import required modules
-import { Button } from "flowbite-react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import Btn from "../../button/Btn";
 
 export default function BannerSlider() {
   const progressCircle = useRef(null);
@@ -49,12 +49,7 @@ export default function BannerSlider() {
                 {bannerData[0].description}
               </p>
               <div className="inline-flex justify-center flex-col mt-8">
-                <Button
-                  size={"lg"}
-                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
-                >
-                  Explore Now
-                </Button>
+                <Btn>Explore Now</Btn>
               </div>
             </div>
           </div>
@@ -70,12 +65,7 @@ export default function BannerSlider() {
                 {bannerData[1].description}
               </p>
               <div className="inline-flex justify-center flex-col mt-8">
-                <Button
-                  size={"lg"}
-                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
-                >
-                  Explore Now
-                </Button>
+                <Btn>Explore Now</Btn>
               </div>
             </div>
           </div>
@@ -91,12 +81,7 @@ export default function BannerSlider() {
                 {bannerData[2].description}
               </p>
               <div className="inline-flex justify-center flex-col mt-8">
-                <Button
-                  size={"lg"}
-                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
-                >
-                  Explore Now
-                </Button>
+                <Btn>Explore Now</Btn>
               </div>
             </div>
           </div>
@@ -112,12 +97,7 @@ export default function BannerSlider() {
                 {bannerData[3].description}
               </p>
               <div className="inline-flex justify-center flex-col mt-8">
-                <Button
-                  size={"lg"}
-                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
-                >
-                  Explore Now
-                </Button>
+                <Btn>Explore Now</Btn>
               </div>
             </div>
           </div>
@@ -133,12 +113,7 @@ export default function BannerSlider() {
                 {bannerData[4].description}
               </p>
               <div className="inline-flex justify-center flex-col mt-8">
-                <Button
-                  size={"lg"}
-                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
-                >
-                  Explore Now
-                </Button>
+                <Btn>Explore Now</Btn>
               </div>
             </div>
           </div>
@@ -154,12 +129,7 @@ export default function BannerSlider() {
                 {bannerData[5].description}
               </p>
               <div className="inline-flex justify-center flex-col mt-8">
-                <Button
-                  size={"lg"}
-                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
-                >
-                  Explore Now
-                </Button>
+                <Btn>Explore Now</Btn>
               </div>
             </div>
           </div>
@@ -175,12 +145,7 @@ export default function BannerSlider() {
                 {bannerData[6].description}
               </p>
               <div className="inline-flex justify-center flex-col mt-8">
-                <Button
-                  size={"lg"}
-                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
-                >
-                  Explore Now
-                </Button>
+                <Btn>Explore Now</Btn>
               </div>
             </div>
           </div>
@@ -196,12 +161,7 @@ export default function BannerSlider() {
                 {bannerData[7].description}
               </p>
               <div className="inline-flex justify-center flex-col mt-8">
-                <Button
-                  size={"lg"}
-                  className="bg_pri enabled:hover:bg-[#f94646] focus:outline-none"
-                >
-                  Explore Now
-                </Button>
+                <Btn>Explore Now</Btn>
               </div>
             </div>
           </div>

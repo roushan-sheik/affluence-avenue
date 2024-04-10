@@ -1,8 +1,8 @@
-import { Button } from "flowbite-react";
 import React from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { MdOutlineClear } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Btn from "../../button/Btn";
 import NavProfile from "../../nav-profile/NavProfile";
 import Navlist from "../../navlist/Navlist";
 
@@ -50,7 +50,7 @@ function Header() {
                 <NavProfile />
               ) : (
                 <Link to={"/login"}>
-                  <Button className="bg_pri">LogIn</Button>
+                  <Btn>Login</Btn>
                 </Link>
               )}
             </div>
