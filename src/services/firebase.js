@@ -5,14 +5,16 @@ import { getAuth } from "firebase/auth";
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const some = import.meta.env.AUTH_APIKEY;
+console.log(some);
 const firebaseConfig = {
-  apiKey: import.meta.env.APIKEY,
-  authDomain: import.meta.env.AUTHDOMAIN,
-  projectId: import.meta.env.PROJECTID,
-  storageBucket: import.meta.env.STORAGEBUCKET,
-  messagingSenderId: import.meta.env.MESSAGINGSENDERID,
-  appId: import.meta.env.APPID,
-  measurementId: import.meta.env.MEASUREMENTID,
+  apiKey: "AIzaSyC5B-A-pUsnfPYUFpTqIuIus5AlJm7X0r0",
+  authDomain: "affluence-avenue.firebaseapp.com",
+  projectId: "affluence-avenue",
+  storageBucket: "affluence-avenue.appspot.com",
+  messagingSenderId: "877418406277",
+  appId: "1:877418406277:web:a5ae1dea60f56eb2c964ec",
+  measurementId: "G-PF00KCX7FR",
 };
 
 // Initialize Firebase

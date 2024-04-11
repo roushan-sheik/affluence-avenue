@@ -5,7 +5,11 @@ import { Link } from "react-router-dom";
 import * as yup from "yup";
 import Btn from "../../components/button/Btn";
 import LogInButton from "../../components/button/LogInButton";
-const Login = () => {
+import useUserContext from './../../hooks/useUserContext';
+
+const Login = () =>
+{
+
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -17,7 +21,7 @@ const Login = () => {
       password: yup.string().min(8).required(),
     }),
     onSubmit: (value) => {
-      console.log(value);
+       
     },
   } );
     let renderEmailErrors = formik.touched.email && formik.errors.email && (

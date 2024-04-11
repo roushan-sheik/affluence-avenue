@@ -4,7 +4,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
 import Btn from "../../components/button/Btn";
+import useUserContext from "../../hooks/useUserContext";
+
 const Register = () => {
+  const { createUser } = useUserContext();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -20,9 +23,17 @@ const Register = () => {
       password: yup.string().min(8).required(),
     }),
     onSubmit: (value) => {
-      console.log(value);
+      const { email, password } = value;
+      createUser(email, password)
+        .then((result) => {
+          console.log(result.user);
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
     },
   });
+
   // name validaton
   let renderNameErrors = formik.touched.name && formik.errors.name && (
     <span className="text-red-500">{formik.errors.name}</span>
@@ -115,7 +126,7 @@ const Register = () => {
         </div>
         {renderPasswordErrors}
         {/* submit button  */}
-        <Btn type={"submit"}> Login</Btn>
+        <Btn type={"submit"}> Register</Btn>
         <p className=" text-base text_sec text-center ">
           Already have an Account?{" "}
           <Link to="/login">

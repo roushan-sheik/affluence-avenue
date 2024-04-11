@@ -4,12 +4,11 @@ import BannerSlider from "../../components/slider/banner/BannerSlider";
 import State from "../../components/state/State";
 import Title from "../../components/title/Title";
 import { stateTitle } from "../../constant/title";
-import userContext from "../../hooks/userContext";
 
 const Home = () => {
   const { data } = useLoaderData();
- 
- 
+  console.log(import.meta.env.AUTH_APIKEY);
+
   return (
     <div>
       <BannerSlider />
