@@ -17,10 +17,14 @@ const Register = () => {
   function handleSubmit(e) {
     e.preventDefault();
     console.log(user);
+    setUser({ name: "", email: "", photoUrl: "", password: "" });
+    e.target.reset();
   }
   return (
     <div className="flex flex-col justify-center items-center">
-      <h2 className=" text_pri text-4xl my-4 font-bold text-center">LogIn</h2>
+      <h2 className=" text_pri text-4xl my-4 font-bold text-center">
+        Register
+      </h2>
       <form
         onSubmit={handleSubmit}
         className="flex max-w-md flex-col md:w-[50%] w-[94%] gap-4"
@@ -32,12 +36,14 @@ const Register = () => {
           name={"name"}
           required={true}
           label={"Name"}
+          value={user.name}
           placeholder={"name"}
           onChange={handleChange}
         />
         <Inp
           type="text"
           name={"email"}
+          value={user.email}
           label={"Email"}
           required={true}
           placeholder={"email"}
@@ -47,6 +53,7 @@ const Register = () => {
           type="text"
           name={"photoUrl"}
           label={"Photo Url"}
+          value={user.photoUrl}
           required={true}
           placeholder={"http://server/arifamoni.jpg"}
           onChange={handleChange}
@@ -55,6 +62,7 @@ const Register = () => {
           type="password"
           name={"password"}
           required={true}
+          value={user.password}
           label={"Password"}
           onChange={handleChange}
         />
