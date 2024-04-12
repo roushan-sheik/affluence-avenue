@@ -1,4 +1,3 @@
-import { signInWithEmailAndPassword } from "firebase/auth";
 import React from "react";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
@@ -6,9 +5,10 @@ import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
 import LogInButton from "../../components/button/LogInButton";
 import Inp from "../../components/input/Inp";
-import auth from "../../services/firebase";
+import useUserContext from "../../hooks/useUserContext";
 
 const Login = () => {
+  const { loginUser } = useUserContext();
   const [error, setError] = React.useState(null);
   const [user, setUser] = React.useState({
     email: "",
@@ -29,7 +29,7 @@ const Login = () => {
     }
 
     // login user
-    signInWithEmailAndPassword(auth, user.email, user.password)
+    loginUser(user.email, user.password)
       .then((result) => {
         toast.success("Successfully logged in", {
           position: "top-center",
@@ -40,7 +40,7 @@ const Login = () => {
           position: "top-center",
         });
       });
-    console.log(user);
+ 
     setUser({ email: "", password: "" });
     e.target.reset();
   }
