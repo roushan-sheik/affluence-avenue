@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
 import Inp from "../../components/input/Inp";
-
 const Register = () => {
   const [error, setError] = React.useState(null);
   const [user, setUser] = React.useState({
@@ -19,23 +20,37 @@ const Register = () => {
     e.preventDefault();
     setError("");
     // validation
+    // Password should be minimum 8 characters
+    if (user.password.length < 8) {
+      setError("Password should be minimum 8 characters.");
+      toast.error("Password should be minimum 8 characters.", {
+        position: "top-right",
+      });
+      return;
+    }
     // Must have an Lowercase letter in the password
     const checkLower = /^(?=.*[a-z]).+$/;
     if (!checkLower.test(user.password)) {
       setError("Must have an Lowercase letter in the password");
+      toast.warn("Must have an Lowercase letter in the password", {
+        position: "top-right",
+      });
       return;
     }
     // Must have an Uppercase letter in the password
     const checkUpper = /^(?=.*[A-Z]).+$/;
     if (!checkUpper.test(user.password)) {
       setError("Must have an Uppercase letter in the password");
+      toast.warn("Must have an Uppercase letter in the password", {
+        position: "top-right",
+      });
       return;
     }
-    if (user.password.length < 8) {
-      // Password should be minimum 8 characters
-      setError("Password should be minimum 8 characters.");
-      return;
-    }
+
+    toast.success("Successfully user created", {
+      position: "top-center",
+    });
+
     console.log(user);
 
     setUser({ name: "", email: "", photoUrl: "", password: "" });
@@ -46,6 +61,7 @@ const Register = () => {
       <h2 className=" text_pri text-4xl my-4 font-bold text-center">
         Register
       </h2>
+      <ToastContainer />
       <form
         onSubmit={handleSubmit}
         className="flex max-w-md flex-col md:w-[50%] w-[94%] gap-4"
