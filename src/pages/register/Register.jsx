@@ -18,14 +18,19 @@ const Register = () => {
   function handleSubmit(e) {
     e.preventDefault();
     setError("");
-    console.log(user);
     // validation
     // Must have an Uppercase letter in the password
     const checkUpper = /^(?=.*[A-Z]).+$/;
+    if (!checkUpper.test(user.password)) {
+      setError("Must have an Uppercase letter in the password");
+      return;
+    }
     if (user.password.length < 8) {
+      // Password should be minimum 8 characters
       setError("Password should be minimum 8 characters.");
       return;
     }
+    console.log(user);
 
     setUser({ name: "", email: "", photoUrl: "", password: "" });
     e.target.reset();
