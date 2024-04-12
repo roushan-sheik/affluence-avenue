@@ -4,6 +4,7 @@ import Btn from "../../components/button/Btn";
 import Inp from "../../components/input/Inp";
 
 const Register = () => {
+  const [error, setError] = React.useState(null);
   const [user, setUser] = React.useState({
     name: "",
     email: "",
@@ -16,7 +17,16 @@ const Register = () => {
   // handle the form
   function handleSubmit(e) {
     e.preventDefault();
+    setError("");
     console.log(user);
+    // validation
+    // Must have an Uppercase letter in the password
+    const checkUpper = /^(?=.*[A-Z]).+$/;
+    if (user.password.length < 8) {
+      setError("Password should be minimum 8 characters.");
+      return;
+    }
+
     setUser({ name: "", email: "", photoUrl: "", password: "" });
     e.target.reset();
   }
@@ -66,6 +76,8 @@ const Register = () => {
           label={"Password"}
           onChange={handleChange}
         />
+        {/* error message */}
+        <span className="text-red-500">{error}</span>
         {/* submit button  */}
         <Btn type={"submit"}> Register</Btn>
         <p className=" text-base text_sec text-center ">

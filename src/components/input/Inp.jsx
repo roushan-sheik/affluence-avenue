@@ -27,7 +27,7 @@ const Inp = ({
         required={required}
         name={name}
         id={name}
-        className={`rounded-lg border border-sky-500 bg-transparent px-4 py-2 text-[#1B8EF8] focus:outline-none ${inputStyle} `}
+        className={`rounded-lg border border-gray-300 bg-transparent px-4 py-2 text-[#1B8EF8] focus:outline-none ${inputStyle} `}
         type={type}
       />
     </div>
