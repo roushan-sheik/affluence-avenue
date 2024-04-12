@@ -19,6 +19,12 @@ const Register = () => {
     e.preventDefault();
     setError("");
     // validation
+    // Must have an Lowercase letter in the password
+    const checkLower = /^(?=.*[a-z]).+$/;
+    if (!checkLower.test(user.password)) {
+      setError("Must have an Lowercase letter in the password");
+      return;
+    }
     // Must have an Uppercase letter in the password
     const checkUpper = /^(?=.*[A-Z]).+$/;
     if (!checkUpper.test(user.password)) {
