@@ -10,7 +10,7 @@ import useUserContext from "../../hooks/useUserContext";
 const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { loginUser, googleLogin, githubLogin } = useUserContext();
+  const { loginUser, signinWithGoogle } = useUserContext();
   const [error, setError] = React.useState(null);
   const [user, setUser] = React.useState({
     email: "",

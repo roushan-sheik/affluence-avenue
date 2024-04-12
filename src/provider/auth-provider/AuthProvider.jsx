@@ -1,5 +1,6 @@
 import {
   createUserWithEmailAndPassword,
+  GoogleAuthProvider,
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
@@ -21,10 +22,11 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   }
   // login user with google
-  function signinWithPopup(provider) {
-    return signInWithPopup(auth, provider);
+  const googleProvider = new GoogleAuthProvider();
+  function signinWithGoogle(provider) {
+    return signInWithPopup(auth, googleProvider);
   }
- 
+
   // logout user
   function logoutUser() {
     return signOut(auth);
@@ -53,7 +55,7 @@ const AuthProvider = ({ children }) => {
     loginUser,
     logoutUser,
     updateUserProfile,
-    signinWithPopup,
+    signinWithGoogle,
   };
   return (
     <authContext.Provider value={userInfo}>{children}</authContext.Provider>
