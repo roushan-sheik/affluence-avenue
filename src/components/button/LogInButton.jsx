@@ -1,9 +1,25 @@
-"use client";
-
+import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
+import useUserContext from "../../hooks/useUserContext";
 function LogInButton() {
+  const { signinWithPopup } = useUserContext();
+
+  function handleLogin(provider) {
+    console.log("clicked");
+    signinWithPopup(provider)
+      .then((result) => {
+        console.log(result.user);
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }
+
   return (
     <div className=" flex gap-4 flex-col justify-between md:flex-row">
-      <button className="flex gap-2 px-3 py-2 rounded-xl  justify-center items-center bg-white text_pri border-2 ">
+      <button
+        onClick={handleLogin(GoogleAuthProvider)}
+        className="flex gap-2 px-3 py-2 rounded-xl  justify-center items-center bg-white text_pri border-2 "
+      >
         <img
           src="https://cdn.iconscout.com/icon/free/png-256/free-google-160-189824.png"
           alt=""
@@ -11,7 +27,10 @@ function LogInButton() {
         />
         <span> Sign in with Google</span>
       </button>
-      <button className="flex gap-2 px-3 py-2 rounded-xl  justify-center items-center bg-white text_pri border border-gray-500">
+      <button
+        onClick={handleLogin(GithubAuthProvider)}
+        className="flex gap-2 px-3 py-2 rounded-xl  justify-center items-center bg-white text_pri border border-gray-500"
+      >
         <img
           src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
           alt=""

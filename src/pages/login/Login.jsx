@@ -10,7 +10,7 @@ import useUserContext from "../../hooks/useUserContext";
 const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const { loginUser } = useUserContext();
+  const { loginUser, googleLogin, githubLogin } = useUserContext();
   const [error, setError] = React.useState(null);
   const [user, setUser] = React.useState({
     email: "",
@@ -75,7 +75,7 @@ const Login = () => {
           label={"Password"}
           onChange={handleChange}
         />
-        <LogInButton />
+
         {/* error message */}
         <span className="text-red-500">{error}</span>
         {/* submit button  */}
@@ -87,6 +87,8 @@ const Login = () => {
           </Link>
         </p>
       </form>
+      <p className="text-base  mt-4 mb-2 text_third text-center">or signin with</p>
+      <LogInButton />
     </div>
   );
 };
