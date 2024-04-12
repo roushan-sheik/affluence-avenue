@@ -2,12 +2,13 @@ import React from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { MdOutlineClear } from "react-icons/md";
 import { Link } from "react-router-dom";
+import useUserContext from "../../../hooks/useUserContext";
 import Btn from "../../button/Btn";
 import NavProfile from "../../nav-profile/NavProfile";
 import Navlist from "../../navlist/Navlist";
 
 function Header() {
-  const user = false;
+  const { user } = useUserContext();
   const [openBar, setOpenBar] = React.useState(false);
   return (
     <div>

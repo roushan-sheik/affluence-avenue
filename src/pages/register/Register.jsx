@@ -1,12 +1,16 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
 import Inp from "../../components/input/Inp";
+import useUserContext from "../../hooks/useUserContext";
 import auth from "../../services/firebase";
+
 const Register = () => {
+  const location = useLocation();
+  const { updateUserProfile } = useUserContext();
   // navigate
   const navigate = useNavigate();
   const [error, setError] = React.useState(null);
@@ -50,15 +54,19 @@ const Register = () => {
       });
       return;
     }
-
+    const route = location?.state || "/";
     createUserWithEmailAndPassword(auth, user.email, user.password)
       .then((result) => {
-        toast.success("Successfully register", {
-          position: "top-center",
-        });
-        setTimeout(() => {
-          navigate("/login");
-        }, 5000);
+        updateUserProfile(user.name, user.photoUrl)
+          .then((result) => {
+            toast.success("Successfully register", {
+              position: "top-center",
+            });
+            setTimeout(() => {
+              navigate(route);
+            }, 4000);
+          })
+          .catch();
       })
       .catch((error) => {
         toast.error(error.message, {

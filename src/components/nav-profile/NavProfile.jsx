@@ -1,15 +1,30 @@
 import { Avatar, Dropdown } from "flowbite-react";
 import React from "react";
-import { navData } from "../../constant/navBar";
+import "react-toastify/dist/ReactToastify.css";
+import useUserContext from "../../hooks/useUserContext";
 
 const NavProfile = () => {
+  const { logoutUser, user } = useUserContext();
+  console.log(user);
+  function handleLogoutClick() {
+    logoutUser()
+      .then((result) => {
+        console.log("successfully LogOut");
+      })
+      .catch((error) => {
+        console.log(error.message);
+      });
+  }
   return (
     <div>
       <Dropdown
         className=""
         label={
           <Avatar
-            img="https://res.cloudinary.com/dakrgonvu/image/upload/v1709822675/profile-500into500-2_otijsr.png"
+            img={
+              user.photoURL ||
+              "https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg"
+            }
             rounded
             statusPosition="top-right"
             status="online"
@@ -20,17 +35,14 @@ const NavProfile = () => {
         arrowIcon={true}
       >
         <Dropdown.Header>
-          <span className="block text-sm">Bonnie Green</span>
+          <span className="block text-sm"> {user.displayName || "Empty"}</span>
           <span className="block truncate text-sm font-medium">
-            name@flowbite.com
+            {user.email || "Empty"}
           </span>
         </Dropdown.Header>
-        {navData.map((data) => {
-          if (data.profile === true) {
-            return <Dropdown.Item>{data.name}</Dropdown.Item>;
-          }
-        })}
-        <Dropdown.Item>{"LogOut"}</Dropdown.Item>
+        <Dropdown.Item>Profile</Dropdown.Item>
+        <Dropdown.Item>Update Profile</Dropdown.Item>
+        <Dropdown.Item onClick={handleLogoutClick}>{"LogOut"}</Dropdown.Item>
       </Dropdown>
     </div>
   );
