@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
@@ -8,6 +8,8 @@ import Inp from "../../components/input/Inp";
 import useUserContext from "../../hooks/useUserContext";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const { loginUser } = useUserContext();
   const [error, setError] = React.useState(null);
   const [user, setUser] = React.useState({
@@ -34,13 +36,16 @@ const Login = () => {
         toast.success("Successfully logged in", {
           position: "top-center",
         });
+        setTimeout(() => {
+          navigate(location.state || "/");
+        }, 3000);
       })
       .catch((error) => {
         toast.error(error.message, {
           position: "top-center",
         });
       });
- 
+
     setUser({ email: "", password: "" });
     e.target.reset();
   }

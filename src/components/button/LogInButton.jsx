@@ -2,7 +2,7 @@
 
 function LogInButton() {
   return (
-    <div className=" flex gap-4 flex-col md:flex-row">
+    <div className=" flex gap-4 flex-col justify-between md:flex-row">
       <button className="flex gap-2 px-3 py-2 rounded-xl  justify-center items-center bg-white text_pri border-2 ">
         <img
           src="https://cdn.iconscout.com/icon/free/png-256/free-google-160-189824.png"
