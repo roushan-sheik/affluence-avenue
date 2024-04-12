@@ -1,6 +1,7 @@
 import { Avatar, Dropdown } from "flowbite-react";
 import React from "react";
 import { navData } from "../../constant/navBar";
+
 const NavProfile = () => {
   return (
     <div>

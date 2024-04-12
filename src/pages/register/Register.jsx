@@ -1,9 +1,11 @@
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import React from "react";
 import { Link } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
 import Inp from "../../components/input/Inp";
+import auth from "../../services/firebase";
 const Register = () => {
   const [error, setError] = React.useState(null);
   const [user, setUser] = React.useState({
@@ -47,11 +49,17 @@ const Register = () => {
       return;
     }
 
-    toast.success("Successfully user created", {
-      position: "top-center",
-    });
-
-    console.log(user);
+    createUserWithEmailAndPassword(auth, user.email, user.password)
+      .then((result) => {
+        toast.success("Successfully user created", {
+          position: "top-center",
+        });
+      })
+      .catch((error) => {
+        toast.error(error.message, {
+          position: "top-right",
+        });
+      });
 
     setUser({ name: "", email: "", photoUrl: "", password: "" });
     e.target.reset();
