@@ -1,80 +1,74 @@
-import { Label, TextInput } from "flowbite-react";
-import { useFormik } from "formik";
 import React from "react";
 import { Link } from "react-router-dom";
-import * as yup from "yup";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Btn from "../../components/button/Btn";
 import LogInButton from "../../components/button/LogInButton";
-import useUserContext from './../../hooks/useUserContext';
+import Inp from "../../components/input/Inp";
+const Login = () => {
+  const [error, setError] = React.useState(null);
+  const [user, setUser] = React.useState({
+    email: "",
+    password: "",
+  });
+  function handleChange(e) {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  }
+  // handle the form
+  function handleSubmit(e) {
+    e.preventDefault();
+    setError("");
+    // validation
+    // Password should be minimum 8 characters
+    if (user.password.length < 8) {
+      setError("Password should be minimum 8 characters.");
+      return;
+    }
 
-const Login = () =>
-{
+    toast.success("Successfully user created", {
+      position: "top-center",
+    });
 
-  const formik = useFormik({
-    initialValues: {
-      email: "",
-      password: "",
-    },
-    // We have a validation schema with formik to validate our field
-    validationSchema: yup.object({
-      email: yup.string().email().required(),
-      password: yup.string().min(8).required(),
-    }),
-    onSubmit: (value) => {
-       
-    },
-  } );
-    let renderEmailErrors = formik.touched.email && formik.errors.email && (
-      <span className="text-red-500">{formik.errors.email}</span>
-    );
-    let renderPasswordErrors = formik.touched.password &&
-      formik.errors.password && (
-        <span className="text-red-500">{formik.errors.password}</span>
-      );
+    console.log(user);
+
+    setUser({ email: "", password: "" });
+    e.target.reset();
+  }
   return (
     <div className="flex flex-col justify-center items-center">
-      <h2 className=" text_pri text-4xl my-4 font-bold text-center">LogIn</h2>
+      <h2 className=" text_pri text-4xl my-4 font-bold text-center">Login</h2>
+      <ToastContainer />
       <form
-        onSubmit={formik.handleSubmit}
+        onSubmit={handleSubmit}
         className="flex max-w-md flex-col md:w-[50%] w-[94%] gap-4"
+        action="#"
       >
-        <div>
-          <div className="mb-2 block">
-            <Label htmlFor="email2" value="Your email" />
-          </div>
-          <TextInput
-            id="email2"
-            type="email"
-            placeholder="name@flowbite.com"
-            onChange={formik.handleChange}
-            required
-            shadow
-            name="email"
-          />
-          
-        </div>
-        {renderEmailErrors}
-        <div>
-          <div className="mb-2 block">
-            <Label htmlFor="password2" value="Your password" />
-          </div>
-          <TextInput
-            id="password2"
-            type="password"
-            required
-            onChange={formik.handleChange}
-            shadow
-            name="password"
-          />
-        </div>
-        {renderPasswordErrors}
-        <Btn type={"submit"}> Login</Btn>
-        <p className=" text-base text_third text-center ">Or login with</p>
+        <Inp
+          type="text"
+          name={"email"}
+          value={user.email}
+          label={"Email"}
+          required={true}
+          placeholder={"email"}
+          onChange={handleChange}
+        />
+        <Inp
+          type="password"
+          name={"password"}
+          required={true}
+          value={user.password}
+          label={"Password"}
+          onChange={handleChange}
+        />
         <LogInButton />
+        {/* error message */}
+        <span className="text-red-500">{error}</span>
+        {/* submit button  */}
+        <Btn type={"submit"}> Login</Btn>
         <p className=" text-base text_sec text-center ">
-          Do not have an Account?{" "}
+          Do not have an account?
           <Link to="/register">
-            <span className="text-sky-500">Register</span>
+            <span className="text-sky-500"> Register</span>
           </Link>
         </p>
       </form>
