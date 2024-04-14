@@ -38,7 +38,7 @@ export const navData = [
     name: "Profile",
     path: "/profile",
     page: Profile,
-    nav: true,
+
     profile: true,
   },
   {

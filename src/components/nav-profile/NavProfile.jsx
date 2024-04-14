@@ -1,5 +1,6 @@
 import { Avatar, Dropdown } from "flowbite-react";
 import React from "react";
+import { Link } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import useUserContext from "../../hooks/useUserContext";
 
@@ -40,8 +41,12 @@ const NavProfile = () => {
             {user.email || "Empty"}
           </span>
         </Dropdown.Header>
-        <Dropdown.Item>Profile</Dropdown.Item>
-        <Dropdown.Item>Update Profile</Dropdown.Item>
+        <Link to={"profile"}>
+          <Dropdown.Item>Profile</Dropdown.Item>
+        </Link>
+        <Link to={"update-profile"}>
+          <Dropdown.Item>Update Profile</Dropdown.Item>
+        </Link>
         <Dropdown.Item onClick={handleLogoutClick}>{"LogOut"}</Dropdown.Item>
       </Dropdown>
     </div>
