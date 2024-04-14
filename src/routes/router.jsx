@@ -1,16 +1,59 @@
 import { createBrowserRouter } from "react-router-dom";
-import { navData } from "../constant/navBar";
 import Root from "../layout/Root";
+import Blog from "../pages/blog/Blog";
+import Home from "../pages/home/Home";
+import Login from "../pages/login/Login";
+import LuxuryDetails from "../pages/luxury-details/LuxuryDetails";
+import Profile from "../pages/profile/Profile";
+import Register from "../pages/register/Register";
+import SpecialState from "../pages/special-state/SpecialState";
+import UpdateProfile from "../pages/update-profile/UpdateProfile";
+import Protected from "../provider/protected/Protected";
+import loader from "./loader";
+
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    children: navData?.map((nav) => {
-      return {
-        path: nav.path,
-        element: <nav.page />,
-        loader: nav.loader,
-      };
-    }),
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+        loader: loader,
+      },
+      {
+        path: "/special-state",
+        element: <SpecialState />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
+      },
+      {
+        path: "/luxury/:title",
+        element: (
+          <Protected>
+            <LuxuryDetails />
+          </Protected>
+        ),
+        loader: loader,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/update-profile",
+        element: <UpdateProfile />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+    ],
   },
 ]);

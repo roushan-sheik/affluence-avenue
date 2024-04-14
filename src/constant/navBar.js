@@ -5,7 +5,6 @@ import Profile from "../pages/profile/Profile";
 import SpecialState from "../pages/special-state/SpecialState";
 import UpdateProfile from "../pages/update-profile/UpdateProfile";
 import loader from "../routes/loader";
-
 import Login from "./../pages/login/Login";
 import Register from "./../pages/register/Register";
 
