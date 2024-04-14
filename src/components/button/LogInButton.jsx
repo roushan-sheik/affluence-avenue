@@ -1,12 +1,16 @@
 // import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
+import { useLocation, useNavigate } from "react-router-dom";
 import useUserContext from "../../hooks/useUserContext";
+
 function LogInButton() {
+  const location = useLocation();
+  const navigate = useNavigate();
   const { signinWithGoogle, githubLogin } = useUserContext();
   // google login
   function handleGoogleLogin() {
     signinWithGoogle()
       .then(() => {
-        console.log("login success");
+        navigate(location?.state || "/");
       })
       .catch((err) => {
         console.log(err.message);
@@ -16,7 +20,7 @@ function LogInButton() {
   function handleGithubLogin() {
     githubLogin()
       .then(() => {
-        console.log("login success");
+        navigate(location?.state || "/");
       })
       .catch((err) => {
         console.log(err.message);

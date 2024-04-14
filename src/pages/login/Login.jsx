@@ -8,8 +8,8 @@ import Inp from "../../components/input/Inp";
 import useUserContext from "../../hooks/useUserContext";
 
 const Login = () => {
-  const navigate = useNavigate();
   const location = useLocation();
+  const navigate = useNavigate();
   const { loginUser, signinWithGoogle } = useUserContext();
   const [error, setError] = React.useState(null);
   const [user, setUser] = React.useState({
@@ -37,7 +37,7 @@ const Login = () => {
           position: "top-center",
         });
         setTimeout(() => {
-          navigate(location.state || "/");
+          navigate(location?.state  || "/");
         }, 3000);
       })
       .catch((error) => {
@@ -87,7 +87,9 @@ const Login = () => {
           </Link>
         </p>
       </form>
-      <p className="text-base  mt-4 mb-2 text_third text-center">or signin with</p>
+      <p className="text-base  mt-4 mb-2 text_third text-center">
+        or signin with
+      </p>
       <LogInButton />
     </div>
   );
