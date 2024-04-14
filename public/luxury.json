@@ -13,7 +13,8 @@
     ],
     "description": "Experience unparalleled luxury living in this exquisite penthouse located in the heart of Manhattan. Boasting breathtaking views of the city skyline, this residence features state-of-the-art amenities and opulent finishes throughout. The open-concept layout seamlessly blends indoor and outdoor spaces, perfect for entertaining guests or simply enjoying the spectacular vistas. With meticulous attention to detail and unmatched sophistication, this penthouse sets a new standard for upscale urban living.",
     "status": "For Sale",
-    "monthly_cost": 20000
+    "monthly_cost": 20000,
+    "area": "30000 sq ft"
   },
   {
     "id": 2,
@@ -29,7 +30,8 @@
     ],
     "description": "Nestled along the pristine shores of Malibu, this beachfront villa offers the epitome of coastal luxury. With panoramic views of the Pacific Ocean and lavish indoor-outdoor living spaces, this residence is perfect for those seeking a serene retreat. The villa's sleek modern design and luxurious amenities provide an unparalleled beachfront experience, while the tranquil sound of waves crashing creates an ambiance of relaxation and rejuvenation. Escape to this coastal paradise and indulge in the ultimate luxury lifestyle.",
     "status": "For Sale",
-    "monthly_cost": 25000
+    "monthly_cost": 25000,
+    "area": "20000 sq ft"
   },
   {
     "id": 3,
@@ -45,7 +47,8 @@
     ],
     "description": "Escape to paradise at this exclusive luxury resort nestled amidst the lush landscapes of Bali. Featuring world-class amenities and personalized service, guests can indulge in ultimate relaxation and rejuvenation. Each private villa is meticulously designed with contemporary Balinese décor and offers breathtaking views of the tropical surroundings. Immerse yourself in the tranquility of the spa, savor exquisite cuisine at the resort's gourmet restaurants, or simply unwind on the pristine beach. Discover a sanctuary of luxury and serenity at this idyllic Balinese retreat.",
     "status": "For Rent",
-    "monthly_cost": 15000
+    "monthly_cost": 15000,
+    "area": "30000 sq ft"
   },
   {
     "id": 4,
@@ -61,7 +64,8 @@
     ],
     "description": "Experience the ultimate in privacy and seclusion on your own private island in the Caribbean. With pristine beaches, turquoise waters, and luxurious accommodations, this retreat offers an unparalleled tropical escape. The island's exclusive amenities include multiple luxury villas, a private helipad for convenient access, and a tennis court overlooking the azure ocean. Indulge in leisurely days lounging by the infinity pool or embark on aquatic adventures in the crystal-clear waters. Live out your island fantasies at this extraordinary Caribbean retreat.",
     "status": "For Sale",
-    "monthly_cost": 100000
+    "monthly_cost": 100000,
+    "area": "40000 sq ft"
   },
   {
     "id": 5,
@@ -77,7 +81,8 @@
     ],
     "description": "Live in luxury in this sprawling mansion nestled in the exclusive neighborhood of Beverly Hills. With palatial interiors, manicured gardens, and world-class amenities, this estate offers the epitome of Hollywood glamour. The mansion's grandeur is evident in every detail, from the opulent home theater to the expansive wine cellar. Enjoy the California sunshine in the lush gardens or maintain an active lifestyle in the state-of-the-art gym. Experience the epitome of luxury living in the heart of Beverly Hills.",
     "status": "For Sale",
-    "monthly_cost": 50000
+    "monthly_cost": 50000,
+    "area": "60000 sq ft"
   },
   {
     "id": 6,
@@ -93,7 +98,8 @@
     ],
     "description": "Embrace the Miami lifestyle in this waterfront estate situated along the shores of Biscayne Bay. With panoramic views of the bay and luxurious outdoor living spaces, this residence offers the perfect blend of elegance and relaxation. The estate's private dock allows for seamless access to the azure waters, ideal for yachting enthusiasts. Entertain guests in the outdoor kitchen and lounge area or unwind by the infinity-edge pool overlooking the tranquil bay. Experience waterfront living at its finest in this exclusive Miami estate.",
     "status": "For Rent",
-    "monthly_cost": 30000
+    "monthly_cost": 30000,
+    "area": "30000 sq ft"
   },
   {
     "id": 7,
@@ -109,7 +115,8 @@
     ],
     "description": "Experience the ultimate alpine getaway in this luxurious ski chalet located in the prestigious resort town of Aspen. With direct access to world-class skiing and cozy mountain-inspired interiors, this retreat is perfect for winter enthusiasts. After a day on the slopes, unwind in the hot tub with panoramic mountain views or cozy up by the stone fireplace in the inviting living room. The chalet's media room provides the perfect space for après-ski entertainment. Escape to this winter wonderland and indulge in the ultimate ski resort experience.",
     "status": "For Sale",
-    "monthly_cost": 40000
+    "monthly_cost": 40000,
+    "area": "80000 sq ft"
   },
   {
     "id": 9,
@@ -125,6 +132,7 @@
     ],
     "description": "mbark on the adventure of a lifetime at this luxury safari lodge nestled in the heart of the Serengeti. Offering unparalleled wildlife viewing opportunities and lavish accommodations, this retreat seamlessly blends luxury with adventure. Each of the luxury tented suites provides a comfortable and elegant sanctuary amidst the African wilderness. Experience exhilarating safari excursions led by expert guides, immersing yourself in the mesmerizing landscapes and diverse wildlife of the Serengeti. Indulge in outdoor boma dining under the starlit African sky, savoring delicious cuisine crafted from local ingredients. After a day of exploration, unwind in the infinity-edge pool overlooking the sweeping savannah vistas. Escape the ordinary and embrace the extraordinary at this exclusive safari lodge, where every moment promises unforgettable memories.",
     "status": "For Rent",
-    "monthly_cost": 20000
+    "monthly_cost": 20000,
+    "area": "30000 sq ft"
   }
 ]
