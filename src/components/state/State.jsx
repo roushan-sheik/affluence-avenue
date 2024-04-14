@@ -1,5 +1,6 @@
 import React from "react";
 import { IoLocationOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import Btn from "../button/Btn";
 const State = ({ stateData }) => {
   const {
@@ -53,7 +54,9 @@ const State = ({ stateData }) => {
             );
           })}
         </div>
-        <Btn style={"mt-3 w-full relative bottom-0 "}>View Details</Btn>
+        <Link to={`/luxury/${state_title}`}>
+          <Btn style={"mt-3 w-full relative bottom-0 "}>View Details</Btn>
+        </Link>
       </div>
     </div>
   );

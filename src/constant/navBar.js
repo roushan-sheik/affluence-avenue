@@ -4,7 +4,7 @@ import LuxuryDetails from "../pages/luxury-details/LuxuryDetails";
 import Profile from "../pages/profile/Profile";
 import SpecialState from "../pages/special-state/SpecialState";
 import UpdateProfile from "../pages/update-profile/UpdateProfile";
-import homeLoader from "../routes/loader";
+import loader from "../routes/loader";
 
 import Login from "./../pages/login/Login";
 import Register from "./../pages/register/Register";
@@ -14,7 +14,7 @@ export const navData = [
     name: "Home",
     path: "/",
     page: Home,
-    loader: homeLoader,
+    loader: loader,
     nav: true,
   },
   {
@@ -31,8 +31,9 @@ export const navData = [
   },
   {
     name: "",
-    path: "/luxury/:id",
+    path: "/luxury/:title",
     page: LuxuryDetails,
+    loader: loader,
   },
   {
     name: "Profile",

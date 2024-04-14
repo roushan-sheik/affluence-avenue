@@ -7,7 +7,7 @@ import { stateTitle } from "../../constant/title";
 
 const Home = () => {
   const { data } = useLoaderData();
-  console.log(import.meta.env.AUTH_APIKEY);
+ 
 
   return (
     <div>
