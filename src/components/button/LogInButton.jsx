@@ -1,7 +1,7 @@
 // import { GithubAuthProvider, GoogleAuthProvider } from "firebase/auth";
 import useUserContext from "../../hooks/useUserContext";
 function LogInButton() {
-  const { signinWithGoogle } = useUserContext();
+  const { signinWithGoogle, githubLogin } = useUserContext();
   // google login
   function handleGoogleLogin() {
     signinWithGoogle()
@@ -11,10 +11,16 @@ function LogInButton() {
       .catch((err) => {
         console.log(err.message);
       });
-    console.log("google clicked");
   }
   // github login
   function handleGithubLogin() {
+    githubLogin()
+      .then(() => {
+        console.log("login success");
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
     console.log("github clicked");
   }
 
