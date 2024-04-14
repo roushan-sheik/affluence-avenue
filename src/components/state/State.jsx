@@ -12,6 +12,7 @@ const State = ({ stateData }) => {
     status,
     description,
     monthly_cost,
+    area,
   } = stateData;
   return (
     <div className="p-4 rounded-xl border-2">
@@ -24,7 +25,15 @@ const State = ({ stateData }) => {
       </div>
       {/* content box  */}
       <div className="relative">
-        <h3 className="text-2xl text_pri font-semibold mt-4">{state_title}</h3>
+        <div className="flex justify-between items-center mt-3">
+          <h4 className="text-base text_third mb-2 bg-gray-200 px-3 py-2 rounded-lg ">
+            {status}
+          </h4>
+          <h4 className="text-base text_third mb-2 bg-gray-200 px-3 py-2 rounded-lg ">
+            Area {area}
+          </h4>
+        </div>
+        <h3 className="text-2xl text_pri font-semibold mt-2">{state_title}</h3>
         <h3 className="text-xl text_sec my-2 font-medium ">{segment}</h3>
         <div className="flex gap-2 items-center mb-2">
           <IoLocationOutline />
@@ -34,7 +43,7 @@ const State = ({ stateData }) => {
           <span className="font-medium ">Mouthy Cost: </span>
           {monthly_cost}$
         </h4>
-        <h4 className="text-base text_third mb-2 ">{status}</h4>
+
         <div>
           {facilities.map((item) => {
             return (
