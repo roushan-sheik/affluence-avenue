@@ -8,8 +8,8 @@ import Profile from "../pages/profile/Profile";
 import Register from "../pages/register/Register";
 import SpecialState from "../pages/special-state/SpecialState";
 import UpdateProfile from "../pages/update-profile/UpdateProfile";
-import Protected from "../provider/protected/Protected";
 import loader from "./loader";
+import PrivateRoute from "./privet/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -32,9 +32,9 @@ export const router = createBrowserRouter([
       {
         path: "/luxury/:title",
         element: (
-          <Protected>
+          <PrivateRoute>
             <LuxuryDetails />
-          </Protected>
+          </PrivateRoute>
         ),
         loader: loader,
       },
