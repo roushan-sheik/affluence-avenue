@@ -4,6 +4,7 @@ import Blog from "../pages/blog/Blog";
 import Home from "../pages/home/Home";
 import Login from "../pages/login/Login";
 import LuxuryDetails from "../pages/luxury-details/LuxuryDetails";
+import ErrorPage from "../pages/not-found/ErrorPage";
 import Profile from "../pages/profile/Profile";
 import Register from "../pages/register/Register";
 import SpecialState from "../pages/special-state/SpecialState";
@@ -15,6 +16,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -61,6 +63,10 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },
