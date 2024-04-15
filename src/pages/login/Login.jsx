@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -37,7 +38,7 @@ const Login = () => {
           position: "top-center",
         });
         setTimeout(() => {
-          navigate(location?.state  || "/");
+          navigate(location?.state || "/");
         }, 3000);
       })
       .catch((error) => {
@@ -51,6 +52,9 @@ const Login = () => {
   }
   return (
     <div className="flex flex-col justify-center items-center">
+      <Helmet>
+        <title>AffluenceAvenue | login</title>
+      </Helmet>
       <h2 className=" text_pri text-4xl my-4 font-bold text-center">Login</h2>
       <ToastContainer />
       <form

@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import useUserContext from "../../hooks/useUserContext";
 
 const Profile = () => {
@@ -6,6 +7,9 @@ const Profile = () => {
   const { email, displayName, photoURL, phone } = user || "";
   return (
     <div className="md:w-1/2 mx-auto bg-gray-200 p-6 flex gap-4 mt-4  justify-center items-center flex-col md:flex-row">
+      <Helmet>
+        <title>AffluenceAvenue | Profile</title>
+      </Helmet>
       <div className="md:h-[250px]  md:w-[250px] h-[150px]  w-[150px] rounded-full overflow-hidden">
         <img
           src={photoURL || ""}

@@ -40,7 +40,7 @@ function Header() {
           </div>
           {/* center side nav  */}
           <div>
-            <div className="hidden lg:flex gap-4 items-center ">
+            <div className="hidden lg:flex gap-8 items-center ">
               {<Navlist />}
             </div>
           </div>

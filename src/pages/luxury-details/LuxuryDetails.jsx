@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { IoLocationOutline } from "react-icons/io5";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import Btn from "../../components/button/Btn";
@@ -22,6 +23,9 @@ const LuxuryDetails = () => {
 
   return (
     <div className="flex gap-6 flex-col md:p-16 p-4">
+      <Helmet>
+        <title>AffluenceAvenue State Details</title>
+      </Helmet>
       {/* image box  */}
       <div className="h-[250px] md:h-[400px]">
         <img className="h-full w-full object-cover" src={image} alt="" />

@@ -1,5 +1,6 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -79,6 +80,9 @@ const Register = () => {
   }
   return (
     <div className="flex flex-col justify-center items-center">
+      <Helmet>
+        <title>AffluenceAvenue | register</title>
+      </Helmet>
       <h2 className=" text_pri text-4xl my-4 font-bold text-center">
         Register
       </h2>
