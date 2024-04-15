@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "state_title": "Luxury Penthouse",
-    "image": "https://www.manhattanmiami.com/hubfs/NYC%20Penthouses%20for%20Sale.jpg#keepProtocol",
+    "state_title": "Luxury Penthouse in Manhattan",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiT7KJgg8vOwlheSCdNUMEgfIerGMjpf98VPHtkTAsiQ&s",
     "segment": "Penthouse",
     "location": "Manhattan, New York",
     "facilities": [
@@ -18,8 +18,8 @@
   },
   {
     "id": 2,
-    "state_title": "Beachfront Villa",
-    "image": "https://discover.luxury/wp-content/uploads/2018/05/douglas-elliman.jpg",
+    "state_title": "Beachfront Villa in Malibu",
+    "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/366036509.jpg?k=ea2b99e46fed4b2adb904333b9f661882482a49c335f55ee6c90d0df6495b7d7&o=&hp=1",
     "segment": "Villa",
     "location": "Malibu, California",
     "facilities": [
@@ -35,8 +35,8 @@
   },
   {
     "id": 3,
-    "state_title": "Luxury Resort",
-    "image": "https://res.cloudinary.com/traveltripperweb/image/upload/c_fit,f_auto,h_1200,q_auto,w_1200/v1652682060/axncrum3whibbxiz8suh.jpg",
+    "state_title": "Luxury Resort in Bali",
+    "image": "https://images.lifestyleasia.com/wp-content/uploads/sites/6/2022/03/04111335/amandari-indonesia-suite-exterior-and-pool_original_11588-2-1401x900.jpg",
     "segment": "Resort",
     "location": "Bali, Indonesia",
     "facilities": [
@@ -52,8 +52,8 @@
   },
   {
     "id": 4,
-    "state_title": "Private Island Retreat",
-    "image": "https://s.wsj.net/public/resources/images/BN-GI443_0108pp_GR_20150108112355.jpg",
+    "state_title": "Private Island Retreat in the Caribbean",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0CRVi0bdaJtN5SIbxmnC_etkYSknvrgl9C8UoyaMHy4d89tssV44sYf8LROXQH6pg9So&usqp=CAU",
     "segment": "Private Island",
     "location": "Caribbean Sea",
     "facilities": [
@@ -69,8 +69,8 @@
   },
   {
     "id": 5,
-    "state_title": "Mansion in Beverly Hi",
-    "image": "https://www.onevandam.com/assets/img/938x523/ph_slide_1.jpg",
+    "state_title": "Mansion in Beverly Hills",
+    "image": "https://robbreport.com/wp-content/uploads/2023/01/Beverly_Ridge8.jpg?w=1000",
     "segment": "Mansion",
     "location": "Beverly Hills, California",
     "facilities": [
@@ -86,8 +86,8 @@
   },
   {
     "id": 6,
-    "state_title": "Waterfront Estate ",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4VSo5BuvqIwpcEJWGrXqI1pebD1aNcIfP79f-OtfrAA&s",
+    "state_title": "Waterfront Estate in Miami",
+    "image": "https://robbreport.com/wp-content/uploads/2022/02/Indian-Spring-Rear-Exterior-with-Pool.jpg",
     "segment": "Estate",
     "location": "Miami, Florida",
     "facilities": [
@@ -104,7 +104,7 @@
   {
     "id": 7,
     "state_title": "Ski Chalet in Aspen",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-NisL3so44M-bjbU5wpdAJ2wNW4CuEAsRBVyqXQHyg&s",
+    "image": "https://robbreport.com/wp-content/uploads/2022/12/1-4.jpg?w=1000",
     "segment": "Chalet",
     "location": "Aspen, Colorado",
     "facilities": [

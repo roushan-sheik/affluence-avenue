@@ -9,7 +9,7 @@ import Profile from "../pages/profile/Profile";
 import Register from "../pages/register/Register";
 import SpecialState from "../pages/special-state/SpecialState";
 import UpdateProfile from "../pages/update-profile/UpdateProfile";
-import loader from "./loader";
+import loader, { specialLoader } from "./loader";
 import PrivateRoute from "./privet/PrivateRoute";
 
 export const router = createBrowserRouter([
@@ -25,7 +25,12 @@ export const router = createBrowserRouter([
       },
       {
         path: "/special-state",
-        element: <SpecialState />,
+        element: (
+          <PrivateRoute>
+            <SpecialState />
+          </PrivateRoute>
+        ),
+        loader: specialLoader,
       },
       {
         path: "/blog",
