@@ -44,7 +44,7 @@ export default function BannerSlider() {
               <h2 className="md:text-6xl text-3xl md:font-bold font-semibold   text-white text-center">
                 {bannerData[0].title}
               </h2>
-              d
+              
               <p className="text-base text-white mt-6 md:w-[60%] w-full mx-auto">
                 {bannerData[0].description}
               </p>
