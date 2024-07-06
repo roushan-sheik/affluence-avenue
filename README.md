@@ -1,8 +1,55 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Project
 
-Currently, two official plugins are available:
+## Affluence Avenue
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="./affluence avenue.png" />
+
+### installation
+
+```
+npm install
+```
+
+### running the app
+
+```
+npm run dev
+```
+
+### Deployed Firebase
+
+#### Live link: https://affluence-avenue.web.app/
+
+ 
+<p>This is Resort Management Website. Explore Real States unveils a world of opulence with its luxury properties. From lavish penthouses overlooking glittering cityscapes to sprawling estates nestled in serene landscapes, each residence exudes elegance and sophistication. Immerse yourself in unparalleled comfort and style, where every detail is crafted to indulge the most discerning tastes.</p>
+
+### Used tools & Technologies
+
+- React
+- Tailwind
+- Material Tailwind (component library)
+- React router dom
+- headlessui/react
+- React Tostify
+- React-Helmet-Async
+- React-Hook-Form
+- React icons
+- Hero icons
+- Swiper Js for Slider
+- Firebase
+- Axios
+- tanstack/react-query
+- recharts
+
+## Hello
+
+### I'm Roushan Sheik
+
+### Let't connect
+
+- [LinkedIn](https://www.linkedin.com/in/roushan-sheik/)
+
+- [Facebook](https://www.facebook.com/mdrowshansheikh008/)
+- [Twitter](https://twitter.com/RoushanSheik)
+- https://github.com/roushan-sheik
